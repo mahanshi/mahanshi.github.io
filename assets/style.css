@@ -1,0 +1,67 @@
+ :root {
+  --ink:#e9e5dc; --muted:#a9a49a; --line:rgba(232,226,214,.2);
+  --bg:#171715; --accent:#c6a982; --serif:"Instrument Serif", Georgia, serif;
+  --sans:"DM Sans", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.6}
+.paint-layer{position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+ linear-gradient(rgba(15,15,14,.48),rgba(15,15,14,.70)),
+ url("painting.svg") center center/cover no-repeat}
+
+a{color:inherit;text-decoration:none}
+.site-header{height:94px;padding:0 7vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.wordmark{font-size:13px;letter-spacing:.16em;font-weight:500;display:flex;gap:13px;align-items:center}
+.wordmark span{font-size:9px;color:var(--muted);letter-spacing:.2em;border-left:1px solid var(--line);padding-left:13px}
+nav{display:flex;gap:32px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+nav a{transition:color .25s}nav a:hover,nav a.active{color:var(--ink)}
+main{max-width:1120px;margin:auto;padding:0 7vw}
+.intro{min-height:590px;display:flex;flex-direction:column;justify-content:center;padding:90px 0 110px;position:relative}
+.eyebrow{font-size:9px;letter-spacing:.24em;color:var(--accent);font-weight:500;text-transform:uppercase;margin:0 0 18px}
+h1,h2{font-family:var(--serif);font-weight:400;line-height:.98;letter-spacing:-.025em;margin:0}
+.intro h1{font-size:clamp(66px,10vw,132px);max-width:850px}
+h1 em,h2 em{font-weight:400;color:#c5b29a}
+.intro-note{font-size:13px;color:var(--muted);margin:30px 0 24px;letter-spacing:.04em}
+.text-link{font-size:11px;letter-spacing:.13em;text-transform:uppercase;border-bottom:1px solid var(--accent);padding-bottom:8px;display:inline-flex;gap:22px;width:max-content;color:var(--ink)}
+.text-link span{color:var(--accent)}
+.works-section{padding:95px 0 125px;border-top:1px solid var(--line)}
+.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:42px}
+.section-heading h2,.about-grid h2,.contact-section h2{font-size:clamp(42px,6vw,70px)}
+.section-aside{font-size:11px;line-height:1.7;color:var(--muted);margin:0 0 5px}
+.work-list{border-top:1px solid var(--line)}
+.work-row{display:grid;grid-template-columns:54px 1fr 145px 25px;gap:15px;align-items:center;padding:22px 4px;border-bottom:1px solid var(--line);transition:padding .25s,background .25s}
+.work-row:hover{padding-left:13px;padding-right:13px;background:rgba(255,255,255,.025)}
+.work-number,.work-year{font-size:10px;letter-spacing:.12em;color:var(--muted)}
+.work-title{font-family:var(--serif);font-size:clamp(25px,3.2vw,39px);line-height:1.1}
+.work-arrow{color:var(--accent);font-size:17px;text-align:right;transition:transform .25s}
+.work-row:hover .work-arrow{transform:translate(3px,-3px)}
+.about-section{padding:100px 0 115px;border-top:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:9vw}
+.about-copy{max-width:430px;padding-top:8px;color:#c4beb3;font-size:14px;line-height:1.9}
+.about-copy p{margin:0 0 20px}.about-copy .text-link{margin-top:17px}
+.contact-section{padding:90px 0 120px;border-top:1px solid var(--line)}
+.contact-section h2{margin-bottom:30px}.contact-email{font-family:var(--serif);font-size:clamp(22px,3vw,34px);color:#c5b29a;border-bottom:1px solid var(--line)}
+footer{padding:25px 7vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+.detail-main{min-height:75vh;padding-top:48px;padding-bottom:110px}
+.back-link{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.detail-heading{padding:105px 0 75px;max-width:850px}
+.detail-heading h1{font-size:clamp(58px,9vw,112px);margin-bottom:25px}
+.detail-description{font-size:15px;line-height:1.9;color:#c4beb3;max-width:650px;margin:0}
+.detail-block{padding:40px 0 60px;border-top:1px solid var(--line);max-width:850px}
+.detail-block h2{font-size:43px;margin-bottom:28px}
+.video-frame{aspect-ratio:16/9;background:#090909}
+.video-frame iframe{width:100%;height:100%;border:0}
+.resource-links{display:flex;gap:30px;flex-wrap:wrap}
+.resource-links a{font-size:12px;border-bottom:1px solid var(--accent);padding-bottom:8px}
+audio{width:min(100%,600px);filter:sepia(.2)}
+.empty-note{color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding:25px 0}
+.detail-end{padding-top:60px}
+@media(max-width:650px){
+ .site-header{height:78px;padding:0 6vw}.wordmark{font-size:11px;letter-spacing:.1em}.wordmark span{display:none}
+ nav{gap:15px;font-size:9px}main{padding:0 6vw}.intro{min-height:490px;padding:75px 0}
+ .section-heading{align-items:start;gap:20px;flex-direction:column}.section-aside br{display:none}
+ .work-row{grid-template-columns:27px 1fr 82px 15px;gap:8px;padding:19px 0}.work-title{font-size:25px}.work-year{font-size:9px;text-align:right}
+ .about-grid{grid-template-columns:1fr;gap:30px}.about-copy{padding:0}.works-section,.about-section,.contact-section{padding:75px 0}
+ footer{padding:22px 6vw;flex-wrap:wrap}.detail-heading{padding:75px 0 55px}
+}
