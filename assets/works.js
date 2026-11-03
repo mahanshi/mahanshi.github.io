@@ -57,17 +57,70 @@ const works = [
 ];
 
 const allWorks = [
-  'The Suspended Step of the Stork',
-  'Ayriligh',
-  'Mother, It’s Time for War',
-  'Woven in Shadow',
-  'Gilgamesh',
-  'Ruh-al-arwah',
-  'Bād Mā Rā Khāhad Bord',
-  'Mahi',
-  'Rozhban',
-  'The Wind Will Carry Us Away',
-  'Exiled Echoes',
-  'String Orchestra Piece on a Kurdish Lullaby',
-  'Dayeh Dayeh Vaghte Jangeh'
+  {
+    title: 'The Suspended Step of the Stork',
+    subtitle: 'Ongoing master’s thesis · poem symphony',
+    instrumentation: 'Orchestra',
+    year: '2026'
+  },
+  {
+    title: 'Ayriligh',
+    subtitle: 'Selected first place · NavaYar International Composition Competition',
+    instrumentation: 'Flute, cello and tape',
+    year: '2025'
+  },
+  {
+    title: 'Mother, It’s Time for War',
+    subtitle: 'Selected second place · The National Festival of Youth Music',
+    instrumentation: 'Clarinet, violin and cello',
+    year: '2025'
+  },
+  {
+    title: 'Woven in Shadow',
+    subtitle: 'Selected for the Gilgamesh International Festival',
+    instrumentation: 'Fixed media',
+    year: '2025'
+  },
+  {
+    title: 'Ruh-al-arwah',
+    subtitle: '—',
+    instrumentation: 'Violin and cello',
+    year: '2025'
+  },
+  {
+    title: 'Holes',
+    subtitle: 'Film score',
+    instrumentation: 'piano, violin, harmonica and samples',
+    year: '2026'
+  },
+  {
+    title: 'Rozhban',
+    subtitle: 'Based on a Kurdish lullaby',
+    instrumentation: 'String orchestra',
+    year: '2025'
+  },
+  {
+    title: 'The Wind Will Carry Us Away',
+    subtitle: '—',
+    instrumentation: 'Soprano and piano',
+    year: '2025'
+  },
+  {
+    title: 'Exiled Echoes',
+    subtitle: '—',
+    instrumentation: 'Violin and cello',
+    year: '2024'
+  },
+  {
+    title: 'Dissolving Gleam',
+    subtitle: 'Rondo',
+    instrumentation: 'Flute and piano',
+    year: '2024'
+  },
+  {
+    title: 'Akaky',
+    subtitle: '—',
+    instrumentation: 'Fixed media',
+    year: '2025'
+  }
 ];
